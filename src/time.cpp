@@ -16,3 +16,10 @@ void Time::setMinutes(int minutes) {
   _minutes = minutes;
 }
 
+int Time::getHours() {
+  return _hours;
+}
+
+void Time::setHours(int hours) {
+  _hours = hours;
+}
