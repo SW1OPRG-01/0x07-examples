@@ -1,5 +1,7 @@
 #include "time.h"
 
+Time::Time(int hours, int minutes, int seconds) : _hours(hours),  _minutes(minutes), _seconds(seconds) { }
+
 int Time::getSeconds() { 
   return _seconds;
 }

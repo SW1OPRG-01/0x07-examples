@@ -1,5 +1,6 @@
 class Time {
   public:
+    Time(int hours, int minutes, int seconds);
     int getSeconds();
     void setSeconds(int seconds);
     int getMinutes();
@@ -7,7 +8,7 @@ class Time {
     int getHours();
     void setHours(int hours);
   private:
-    int hours;
-    int minutes;
-    int seconds;  
+    int _hours;
+    int _minutes;
+    int _seconds;  
 };
