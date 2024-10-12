@@ -15,12 +15,12 @@
         "MIMode": "gdb",
       },
       "osx": {
-        "MIMode": "gdb"
+        "MIMode": "lldb"
       },
       "linux": {
         "MIMode": "gdb"
       },
-      "preLaunchTask": "build_current_directory",
+      "preLaunchTask": "build",
     },
   ]
 }
