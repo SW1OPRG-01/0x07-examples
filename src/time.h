@@ -1,3 +1,6 @@
+#ifndef TIME_H
+#define TIME_H
+
 class Time {
   public:
     Time(int hours, int minutes, int seconds);
@@ -12,3 +15,5 @@ class Time {
     int _minutes;
     int _seconds;  
 };
+
+#endif
