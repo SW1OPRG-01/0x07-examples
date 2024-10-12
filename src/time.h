@@ -1,6 +1,8 @@
 #ifndef TIME_H
 #define TIME_H
 
+#include <string>
+
 class Time {
   public:
     Time(int hours, int minutes, int seconds);
@@ -10,10 +12,12 @@ class Time {
     void setMinutes(int minutes);
     int getHours();
     void setHours(int hours);
+    std::string display();    
   private:
     int _hours;
     int _minutes;
-    int _seconds;  
+    int _seconds;
+    std::string pad(int value, int padding);
 };
 
 #endif

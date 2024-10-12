@@ -25,3 +25,16 @@ int Time::getHours() {
 void Time::setHours(int hours) {
   _hours = hours;
 }
+
+std::string Time::display() {
+  
+  return pad(_hours, 2) + ":" + pad(_minutes, 2) + ":" + pad(_seconds, 2);
+}
+
+std::string Time::pad(int value, int padding) {
+  std::string result = std::to_string(value);
+  while(result.length() < padding) {
+    result = "0" + result;
+  }
+  return result;
+}
