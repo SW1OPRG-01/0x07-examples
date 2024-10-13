@@ -2,7 +2,7 @@
 
 Time::Time(int hours, int minutes, int seconds) : _hours(hours),  _minutes(minutes), _seconds(seconds) { }
 
-int Time::getSeconds() { 
+int Time::getSeconds() const { 
   return _seconds;
 }
 
@@ -12,7 +12,7 @@ void Time::setSeconds(int seconds) {
   }
 }
 
-int Time::getMinutes() {
+int Time::getMinutes() const {
   return _minutes;
 }
 
@@ -22,7 +22,7 @@ void Time::setMinutes(int minutes) {
   }
 }
 
-int Time::getHours() {
+int Time::getHours() const {
   return _hours;
 }
 

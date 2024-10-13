@@ -6,11 +6,11 @@
 class Time {
   public:
     Time(int hours, int minutes, int seconds);
-    int getSeconds();
+    int getSeconds() const;
     void setSeconds(int seconds);
-    int getMinutes();
+    int getMinutes() const;
     void setMinutes(int minutes);
-    int getHours();
+    int getHours() const;
     void setHours(int hours);
     std::string to_string();
   private:
