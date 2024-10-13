@@ -7,7 +7,9 @@ int Time::getSeconds() {
 }
 
 void Time::setSeconds(int seconds) {
-  _seconds = seconds;
+  if(seconds <= 59 && seconds >= 0) {
+    _seconds = seconds;
+  }
 }
 
 int Time::getMinutes() {
@@ -15,7 +17,9 @@ int Time::getMinutes() {
 }
 
 void Time::setMinutes(int minutes) {
-  _minutes = minutes;
+  if(minutes <= 59 && minutes >= 0) {
+    _minutes = minutes;
+  }
 }
 
 int Time::getHours() {
@@ -23,11 +27,12 @@ int Time::getHours() {
 }
 
 void Time::setHours(int hours) {
-  _hours = hours;
+  if(hours <= 24 && hours >=0) {
+    _hours = hours;
+  }
 }
 
-std::string Time::display() {
-  
+std::string Time::to_string() {
   return pad(_hours, 2) + ":" + pad(_minutes, 2) + ":" + pad(_seconds, 2);
 }
 

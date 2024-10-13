@@ -12,7 +12,7 @@ class Time {
     void setMinutes(int minutes);
     int getHours();
     void setHours(int hours);
-    std::string display();    
+    std::string to_string();
   private:
     int _hours;
     int _minutes;

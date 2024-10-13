@@ -8,7 +8,7 @@
         "-g",
         "src/*.cpp",
         "-o",
-        "${workspaceFolder}/build/${fileBasenameNoExtension}.out"
+        "${workspaceFolder}/build/time.out"
       ],
       "group": { 
         "kind": "build",
