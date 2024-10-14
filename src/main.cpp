@@ -5,6 +5,6 @@ using namespace std;
 
 int main() {
   Time t = Time(13, 37, 0);
-  cout << t.display() << endl;
+  cout << t.to_string() << endl;
   return 0;
 }
