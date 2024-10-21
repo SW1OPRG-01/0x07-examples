@@ -6,9 +6,9 @@
       "command": "g++",
       "args": [
         "-g",
-        "src/*.cpp",
+        "${fileDirname}/*.cpp",
         "-o",
-        "${workspaceFolder}/build/time.out"
+        "${workspaceFolder}/build/${fileDirnameBasename}.out"
       ],
       "group": { 
         "kind": "build",
