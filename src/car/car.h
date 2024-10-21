@@ -10,9 +10,12 @@ class Car {
     Car();
     Car(string make, string model, int year);
     string getName() const;
+    string getRegistration() const;
+    void setRegistration(string registration);
   private:
     string make;
     string model;
+    string registration;
     int year;
 };
 
