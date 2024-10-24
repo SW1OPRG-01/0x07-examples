@@ -1,6 +1,10 @@
 #include "car.h"
 
-Car::Car() { }
+Car::Car() {
+  make = "";
+  model = "";
+  year = 0;
+}
 
 Car::Car(string make, string model, int year) : make(make), model(model), year(year) { }
 
