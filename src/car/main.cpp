@@ -13,6 +13,10 @@ int main(int argc, char *argv[]) {
   cout << mercedes.getName() << endl;
   cout << bmw.getName() << endl;
   cout << volkswagen.getName() << " " << volkswagen.getRegistration() << endl;
+  volkswagen.setRegistration("007");
+  cout << volkswagen.getRegistration() << endl;
+  volkswagen.setRegistration("PI31415");
+  cout << volkswagen.getRegistration() << endl;
 
   return 0;
 }
