@@ -10,12 +10,12 @@
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
-      "externalConsole": false,
+      "externalConsole": true,
       "windows": {
         "MIMode": "gdb",
       },
       "osx": {
-        "MIMode": "lldb"
+        "MIMode": "lldb",
       },
       "linux": {
         "MIMode": "gdb"
