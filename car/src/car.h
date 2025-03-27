@@ -13,9 +13,9 @@ class Car {
     string getRegistration() const;
     void setRegistration(string registration);
   private:
-    string mMake;
-    string mModel;
-    string mRegistration;
+    string make;
+    string model;
+    string registration;
     int year;
 };
 

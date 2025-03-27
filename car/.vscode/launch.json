@@ -2,10 +2,10 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Build and Debug",
+      "name": "(car) Build and Debug",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/build/${fileDirnameBasename}.out",
+      "program": "${workspaceFolder}/build/car",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
