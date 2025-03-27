@@ -2,14 +2,18 @@
   "version": "2.0.0",
   "tasks": [{
       "label": "build",
-      "type": "shell",
+      "type": "cppbuild",
       "command": "g++",
       "args": [
         "-g",
-        "${fileDirname}/*.cpp",
+        "main.cpp",
+        "time.cpp",
         "-o",
-        "${workspaceFolder}/build/${fileDirnameBasename}.out"
+        "${workspaceFolder}/build/time"
       ],
+      "options": {
+        "cwd": "${workspaceFolder}/src"
+      },
       "group": { 
         "kind": "build",
         "isDefault": true,

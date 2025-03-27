@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "(car) Build and Debug",
+      "name": "Build and Debug",
       "type": "cppdbg",
       "request": "launch",
       "program": "${workspaceFolder}/build/car",

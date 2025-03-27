@@ -5,7 +5,7 @@
       "name": "Build and Debug",
       "type": "cppdbg",
       "request": "launch",
-      "program": "${workspaceFolder}/build/${fileDirnameBasename}.out",
+      "program": "${workspaceFolder}/build/time",
       "args": [],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
