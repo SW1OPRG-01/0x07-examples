@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "car"
+		},
+		{
+			"path": "src/time"
+		}
+	],
+  "settings": {
+    "files.associations": {
+      "ostream": "cpp",
+      "iostream": "cpp"
+    }
+  }
+}

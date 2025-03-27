@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Build and Debug",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/${fileDirnameBasename}.out",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": true,
+      "windows": {
+        "MIMode": "gdb",
+      },
+      "osx": {
+        "MIMode": "lldb",
+      },
+      "linux": {
+        "MIMode": "gdb"
+      },
+      "preLaunchTask": "build",
+    },
+  ]
+}
