@@ -6,7 +6,11 @@ Car::Car() {
   year = 0;
 }
 
-Car::Car(string make, string model, int year) : make(make), model(model), year(year) { }
+Car::Car(string ma, string mo, int y) { 
+  make = ma;
+  model = mo;
+  year = y;
+}
 
 string Car::getName() const {
   return make + " " + model;
@@ -16,7 +20,7 @@ string Car::getRegistration() const {
   return registration;
 }
 
-void Car::setRegistration(string registration) {
+void Car::setRegistration(string regnum) {
   for(int i = 0; i < registration.size(); i++) {
     char alphanumeric = registration.at(i);
     if(i == 0 || i == 1) {
@@ -27,5 +31,5 @@ void Car::setRegistration(string registration) {
       return;
     }
   }
-  this->registration = registration;
+  registration = regnum;
 }
