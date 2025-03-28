@@ -21,8 +21,8 @@ string Car::getRegistration() const {
 }
 
 void Car::setRegistration(string regnum) {
-  for(int i = 0; i < registration.size(); i++) {
-    char alphanumeric = registration.at(i);
+  for(int i = 0; i < regnum.size(); i++) {
+    char alphanumeric = regnum.at(i);
     if(i == 0 || i == 1) {
       if(alphanumeric <= 'A' || alphanumeric > 'Z') {
         return;
